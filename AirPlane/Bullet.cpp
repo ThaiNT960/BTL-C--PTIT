@@ -21,7 +21,4 @@ void Bullet::render(RenderWindow& window)
 	   window.draw(sprite);
 }
 
-//bool Bullet::isOffScreen() const
-//{
-//	return sprite.getPosition().x > 800;
-//}
+
