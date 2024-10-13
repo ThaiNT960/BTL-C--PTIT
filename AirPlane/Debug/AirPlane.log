@@ -1,0 +1,6 @@
+﻿  Bullet.cpp
+  main.cpp
+C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\AirPlane\main.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  player.cpp
+  Generating Code...
+  AirPlane.vcxproj -> C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\Debug\AirPlane.exe
