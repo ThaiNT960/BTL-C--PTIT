@@ -66,13 +66,7 @@ void Player::update()
 		bullet.update(); // Goi ham update trong bullet.h
 	}
 
-// Xóa các viên đạn đã ra khỏi màn hình
-	//bullets.erase(
-	//	remove_if(bullets.begin(), bullets.end(), [](const Bullet& b) {
-	//		return b.isOffScreen(); // Xóa đạn nếu ra khỏi màn hình
-	//		}),
-	//	bullets.end()
-	//);
+
 
 }
 void Player::render(RenderWindow& window)
