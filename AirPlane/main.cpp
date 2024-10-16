@@ -2,9 +2,9 @@
 
 int main()
 {
-	RenderWindow window(VideoMode(800, 600), "AirPlane");
+	RenderWindow window(VideoMode(1500,843), "AirPlane");
 	Texture background;
-	if (!background.loadFromFile("../Data/bkground.png")) {
+	if (!background.loadFromFile("../Data/Clouds 1.png")) {
 		return -1;
 	}
 	Sprite bksprite;
