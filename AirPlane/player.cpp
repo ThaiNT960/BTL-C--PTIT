@@ -1,54 +1,35 @@
-﻿#include "player.h"
+#include "player.h"
 
 Player::Player()
 {
 	if (!texture.loadFromFile("../Data/plane80.png")) {}
 	sprite.setTexture(texture);
 	sprite.setPosition(100, 300);
-	speed = 0.4f;
+	speed = 400.f;
 	canShoot = true;
 }
 void Player::shoot()
 {
-//Vi tri đạn đc bắn ra
+//Vị trí đạn bắn ra
 	bullets.emplace_back(sprite.getPosition().x + sprite.getGlobalBounds().width,
 		sprite.getPosition().y + sprite.getGlobalBounds().height / 2);
 }
-void Player::update()
+void Player::update(float t)
 {
-//Quan ly di chuyen
-	if (Keyboard::isKeyPressed(Keyboard::W)) {
-		sprite.move(0, -speed);
+//Bắt phím di chuyển của người chơi
+	if (Keyboard::isKeyPressed(Keyboard::W)&& sprite.getPosition().y- speed * t > 0) {
+		sprite.move(0, -speed*t);
 	}
-	if (Keyboard::isKeyPressed(Keyboard::S)) {
-		sprite.move(0, speed);
+	else if (Keyboard::isKeyPressed(Keyboard::S)&& sprite.getPosition().y + sprite.getGlobalBounds().height+ speed * t <600) {
+		sprite.move(0, speed*t);
 	}
-	if (Keyboard::isKeyPressed(Keyboard::D)) {
-		sprite.move(speed, 0);
+	else if (Keyboard::isKeyPressed(Keyboard::D)&& sprite.getPosition().x + sprite.getGlobalBounds().width+ speed * t < 800) {
+		sprite.move(speed*t, 0);
 	}
-	if (Keyboard::isKeyPressed(Keyboard::A)) {
-		sprite.move(-speed, 0);
+	else if (Keyboard::isKeyPressed(Keyboard::A)&& sprite.getPosition().x- speed * t > 0) {
+		sprite.move(-speed*t, 0);
 	}
-//Gioi han di chuyen
 
-	Vector2f vitri = sprite.getPosition(); // lấy vị trí hiện tại
-
-	// di chuyển lên trên 
-	if (vitri.y < 0) {
-		sprite.setPosition(vitri.x, 0); 
-	}
-	// di chuyển xuống dưới 
-	if (vitri.y + sprite.getGlobalBounds().height > 843) {
-		sprite.setPosition(vitri.x, 843 - sprite.getGlobalBounds().height);
-	}
-	//  di chuyển sang trái 
-	if (vitri.x < 0) {
-		sprite.setPosition(0, vitri.y); 
-	}
-	//  di chuyển sang phải 
-	if (vitri.x + sprite.getGlobalBounds().width > 1500) {
-		sprite.setPosition(1500 - sprite.getGlobalBounds().width, vitri.y);
-	}
 
 
 // Kiểm tra việc bắn đạn
