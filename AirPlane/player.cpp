@@ -38,16 +38,16 @@ void Player::update()
 		sprite.setPosition(vitri.x, 0); 
 	}
 	// di chuyển xuống dưới 
-	if (vitri.y + sprite.getGlobalBounds().height > 600) {
-		sprite.setPosition(vitri.x, 600 - sprite.getGlobalBounds().height);
+	if (vitri.y + sprite.getGlobalBounds().height > 843) {
+		sprite.setPosition(vitri.x, 843 - sprite.getGlobalBounds().height);
 	}
 	//  di chuyển sang trái 
 	if (vitri.x < 0) {
 		sprite.setPosition(0, vitri.y); 
 	}
 	//  di chuyển sang phải 
-	if (vitri.x + sprite.getGlobalBounds().width > 800) {
-		sprite.setPosition(800 - sprite.getGlobalBounds().width, vitri.y); 
+	if (vitri.x + sprite.getGlobalBounds().width > 1500) {
+		sprite.setPosition(1500 - sprite.getGlobalBounds().width, vitri.y);
 	}
 
 
