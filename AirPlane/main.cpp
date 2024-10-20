@@ -1,5 +1,6 @@
 #include "player.h";
-
+const float Xmax=1500;
+const float Ymax=843;
 int main()
 {
 	RenderWindow window(VideoMode(1500,843), "AirPlane");
