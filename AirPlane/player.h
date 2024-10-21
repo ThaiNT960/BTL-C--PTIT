@@ -1,20 +1,23 @@
-﻿#pragma once
-#include<SFML/Graphics.hpp>
+#pragma once
+#include <SFML/Graphics.hpp>
 #include <vector>
-#include"Bullet.h"
+#include "Bullet.h"
+#include "Enemy.h"
+#include "Score.h"
 using namespace std;
 using namespace sf;
+
 class Player {
-	public:
-		Player();   // ham khoi tao
-		void update(); // ham cap nhat trang thai
-		void render(RenderWindow& window);// ham vẽ máy bay
-		void shoot(); // hàm bắn đạn
-		
-	private:
-		Texture texture;
-		Sprite sprite;
-		float speed;
-		vector<Bullet> bullets;// danh sách đạn bắn ra
-		bool canShoot;
+public:
+    Player();
+    void update(float deltaTime, vector<Enemy>& enemies, Score& score);
+    void render(RenderWindow& window);
+    void shoot(); // Hàm bắn đạn
+
+private:
+    Texture texture;
+    Sprite sprite;
+    float speed;
+    vector<Bullet> bullets; // Danh sách đạn bắn ra
+    bool canShoot;
 };
