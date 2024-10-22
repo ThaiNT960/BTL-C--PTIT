@@ -1,6 +1,7 @@
-﻿  Bullet.cpp
+﻿  Enemy.cpp
+C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\AirPlane\Enemy.cpp(9,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\AirPlane\Enemy.cpp(15,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   main.cpp
-C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\AirPlane\main.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   player.cpp
   Generating Code...
   AirPlane.vcxproj -> C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\Debug\AirPlane.exe
