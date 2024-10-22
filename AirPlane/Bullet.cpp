@@ -16,4 +16,6 @@ void Bullet::render(RenderWindow& window) {
 }
 FloatRect Bullet::getGlobalBounds() {
     return sprite.getGlobalBounds(); // trả về vùng bao quanh đạn
-}
+}  
+
+//hello
