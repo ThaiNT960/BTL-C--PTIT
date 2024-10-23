@@ -14,19 +14,22 @@ void Player::shoot()
     bullets.emplace_back(sprite.getPosition().x + sprite.getGlobalBounds().width,
         sprite.getPosition().y + sprite.getGlobalBounds().height / 2);
 }
+FloatRect Player::getGlobalBounds() {
+    return sprite.getGlobalBounds();
+}
 
-void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score,Boss& boss) {
+void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss& boss) {
     //Bắt phím di chuyển của người chơi
     if (Keyboard::isKeyPressed(Keyboard::W) && sprite.getPosition().y - speed * deltaTime > 0) {
         sprite.move(0, -speed * deltaTime);
     }
-    if (Keyboard::isKeyPressed(Keyboard::S) && sprite.getPosition().y + sprite.getGlobalBounds().height + speed * deltaTime < 843) {
+    else if (Keyboard::isKeyPressed(Keyboard::S) && sprite.getPosition().y + sprite.getGlobalBounds().height + speed * deltaTime < 843) {
         sprite.move(0, speed * deltaTime);
     }
-    if (Keyboard::isKeyPressed(Keyboard::D) && sprite.getPosition().x + sprite.getGlobalBounds().width + speed * deltaTime < 1500) {
+    else if (Keyboard::isKeyPressed(Keyboard::D) && sprite.getPosition().x + sprite.getGlobalBounds().width + speed * deltaTime < 1500) {
         sprite.move(speed * deltaTime, 0);
     }
-    if (Keyboard::isKeyPressed(Keyboard::A) && sprite.getPosition().x - speed * deltaTime > 0) {
+    else if (Keyboard::isKeyPressed(Keyboard::A) && sprite.getPosition().x - speed * deltaTime > 0) {
         sprite.move(-speed * deltaTime, 0);
     }
 
@@ -35,10 +38,10 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score,Boss& 
         shoot();
         canShoot = false;
     }
-    // Kiểm tra khi nào nhả phím Space
     if (!Keyboard::isKeyPressed(Keyboard::Space)) {
         canShoot = true; // Khi nhả phím,cho phép bắn đạn 
     }
+
 
 
     // Cập nhật vị trí các viên đạn and kiểm tra va chạm với kẻ thù
@@ -50,33 +53,57 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score,Boss& 
         for (auto& enemy : enemies) {
             if (it->getGlobalBounds().intersects(enemy.getGlobalBounds())) {
                 it = bullets.erase(it); // xóa đạn
+
                 enemy.reset(); // đặt lại kẻ thù
                 score.tăng(10); //tăng 10 điểm
+                if (score.getScore() >= 200) activity = false;
                 hit = true;
                 break;
             }
         }
-            if (!hit) {
+
+        if (!hit) {
             ++it; // nếu không có va chạm thì tiếp tục
         }
     }
-    for (auto it = bullets.begin(); it != bullets.end();) {
-        it->update(deltaTime); 
+    //Kiểm tra va chạm giữa player vs enemies
+    for (auto it = enemies.begin(); it != enemies.end();) {
         bool hit = false;
-            if (it->getGlobalBounds().intersects(boss.getGlobalBounds())) {
-                it = bullets.erase(it); 
-                boss.decrease(10);
-                hit = true;}
+        if (it->getGlobalBounds().intersects(sprite.getGlobalBounds())) {
+            activity = false;
+            break;
+        }
+        if (!hit) it++;
+    }
+    for (auto it = bullets.begin(); it != bullets.end();) {
+        it->update(deltaTime);
+        bool hit = false;
+        if (it->getGlobalBounds().intersects(boss.getGlobalBounds())) {
+            it = bullets.erase(it);
+            boss.decrease(10);
+            hit = true;
+        }
         if (!hit) {
-            ++it; 
+            ++it;
         }
     }
-
-    
 }
+
 void Player::render(RenderWindow& window) {
     window.draw(sprite);
     for (auto& bullet : bullets) {
         bullet.render(window);
     }
+}
+bool Player::Activity() {
+    return activity;
+}
+void Player::Reset() {
+
+}
+void Player::Win() {
+
+}
+void Player::Lose() {
+
 }

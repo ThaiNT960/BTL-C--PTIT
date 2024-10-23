@@ -11,15 +11,19 @@ using namespace sf;
 class Player {
 public:
     Player();
-    void update(float deltaTime, vector<Enemy>& enemies, Score& score,Boss& boss);
+    void update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss& boss);
     void render(RenderWindow& window);
     void shoot(); // Hàm bắn đạn
-
-
+    FloatRect getGlobalBounds();
+    bool Activity();
+    void Reset();
+    void Win();
+    void Lose();
 private:
     Texture texture;
     Sprite sprite;
     float speed;
     vector<Bullet> bullets; // Danh sách đạn bắn ra
     bool canShoot;
+    bool activity = true;
 };

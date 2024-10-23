@@ -30,13 +30,13 @@ void Boss::render(RenderWindow& window)
 
 bool Boss::BossDefeat()
 {
-	if (Health <= 0) return true;
-	else return false;
+	if (Health <= 0)  return true;
+	return false;
 }
 
-FloatRect Boss::getGlobalBounds()
-{
-	return sprite.getGlobalBounds();
+FloatRect Boss::getGlobalBounds() {
+	if (Health <= 0) return FloatRect(0,0,0,0); 
+	return sprite.getGlobalBounds(); 
 }
 
 void Boss::decrease(int tmp)
