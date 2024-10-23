@@ -4,15 +4,17 @@
 #include "Bullet.h"
 #include "Enemy.h"
 #include "Score.h"
+#include "Boss.h"
 using namespace std;
 using namespace sf;
 
 class Player {
 public:
     Player();
-    void update(float deltaTime, vector<Enemy>& enemies, Score& score);
+    void update(float deltaTime, vector<Enemy>& enemies, Score& score,Boss& boss);
     void render(RenderWindow& window);
     void shoot(); // Hàm bắn đạn
+
 
 private:
     Texture texture;

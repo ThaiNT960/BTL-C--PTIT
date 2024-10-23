@@ -30,6 +30,9 @@
     <ClCompile Include="Score.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="player.h">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Score.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

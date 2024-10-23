@@ -13,6 +13,8 @@ int main() {
     bksprite.setTexture(background);
     Player player;
     Score score;
+    Boss boss;
+    bool BossActive=false;
     vector<Enemy> enemies(3);//tạo 3 kẻ thù
     Clock clock;
     while (window.isOpen()) {
@@ -22,19 +24,42 @@ int main() {
             if (event.type == Event::Closed)
                 window.close();
         }
-        player.update(deltaTime, enemies, score);
-        for (auto& enemy : enemies) {
-            enemy.update(deltaTime);
+        player.update(deltaTime, enemies, score,boss);
+      
+        if (score.getScore() > 100 && !BossActive) {
+            BossActive = true;
+
         }
-        if (score.getScore() > 200) {
-            score.reset(); // 200 đ thì reset lại
-            // thêm tính năng như quay lại menu chính hay sao thì thêm ở đây 
+        if (BossActive) {
+            boss.update(deltaTime);
+            if (boss.BossDefeat()) {
+                BossActive = false;
+                score.reset();
+            }
         }
+        else{
+            for (auto& enemy : enemies) {
+                enemy.update(deltaTime);
+            }
+        }
+       
+           
+        
+
+
+
         window.clear();
         window.draw(bksprite);
         player.render(window);
-        for (auto& enemy : enemies) {
-            enemy.render(window);
+
+       
+        if (BossActive) {
+            boss.render(window);
+        }
+        else {
+            for (auto& enemy : enemies) {
+                enemy.render(window);
+            }
         }
         score.render(window);
         window.display();

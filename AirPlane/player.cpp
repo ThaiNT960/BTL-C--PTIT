@@ -15,7 +15,7 @@ void Player::shoot()
         sprite.getPosition().y + sprite.getGlobalBounds().height / 2);
 }
 
-void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score) {
+void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score,Boss& boss) {
     //Bắt phím di chuyển của người chơi
     if (Keyboard::isKeyPressed(Keyboard::W) && sprite.getPosition().y - speed * deltaTime > 0) {
         sprite.move(0, -speed * deltaTime);
@@ -60,6 +60,19 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score) {
             ++it; // nếu không có va chạm thì tiếp tục
         }
     }
+    for (auto it = bullets.begin(); it != bullets.end();) {
+        it->update(deltaTime); 
+        bool hit = false;
+            if (it->getGlobalBounds().intersects(boss.getGlobalBounds())) {
+                it = bullets.erase(it); 
+                boss.decrease(10);
+                hit = true;}
+        if (!hit) {
+            ++it; 
+        }
+    }
+
+    
 }
 void Player::render(RenderWindow& window) {
     window.draw(sprite);
