@@ -3,6 +3,7 @@
 #include <vector>
 #include "Score.h"
 
+
 int main() {
     RenderWindow window(VideoMode(1500, 843), "AirPlane");
     Texture background;
@@ -22,9 +23,9 @@ int main() {
     Boss boss;
     bool BossActive = false;
     vector<Enemy> enemies(3);//tạo 3 kẻ thù
-    Clock clock;
+    Clock clockfps,clock;
     while (window.isOpen()) {
-        float deltaTime = clock.restart().asSeconds();
+        float deltaTime = clockfps.restart().asSeconds();
         Event event;
         while (window.pollEvent(event)) {
             if (event.type == Event::Closed)
@@ -32,7 +33,7 @@ int main() {
         }
         if (player.Activity()) {
             player.update(deltaTime, enemies, score, boss);
-            if (score.getScore() > 100 && !BossActive)BossActive = true;
+            if (score.getScore() > 300 && !BossActive)BossActive = true;
             if (BossActive) {
                 boss.update(deltaTime);
                 if (boss.BossDefeat()) {
@@ -44,14 +45,14 @@ int main() {
         }
         window.clear();
         window.draw(bksprite);
-        player.render(window);
+        player.render(window,deltaTime);
         score.render(window);
         if (BossActive) {
             boss.render(window);
         }
         else for (auto& enemy : enemies) enemy.render(window);
         //Hiển thị khi Win hoặc Lose
-        if (score.getScore() >= 200) {//Win
+        if (score.getScore() >= 400) {//Win
             window.draw(darkOverlay);
 
         }
@@ -63,4 +64,3 @@ int main() {
         window.display();
     }
 }
-//hello con cho thai

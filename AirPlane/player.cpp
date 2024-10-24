@@ -53,7 +53,8 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
         for (auto& enemy : enemies) {
             if (it->getGlobalBounds().intersects(enemy.getGlobalBounds())) {
                 it = bullets.erase(it); // xóa đạn
-
+                Explosion t(enemy.getPosition());
+                explosions.emplace_back(t);
                 enemy.reset(); // đặt lại kẻ thù
                 score.tăng(10); //tăng 10 điểm
                 if (score.getScore() >= 200) activity = false;
@@ -75,6 +76,7 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
         }
         if (!hit) it++;
     }
+    //Kiểm tra va chạm giữa Player và Boss
     for (auto it = bullets.begin(); it != bullets.end();) {
         it->update(deltaTime);
         bool hit = false;
@@ -83,27 +85,20 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
             boss.decrease(10);
             hit = true;
         }
-        if (!hit) {
-            ++it;
-        }
+        if (!hit)++it;
     }
 }
 
-void Player::render(RenderWindow& window) {
+void Player::render(RenderWindow& window,float deltatime) {
     window.draw(sprite);
     for (auto& bullet : bullets) {
         bullet.render(window);
     }
+     for (int i = 0; i < explosions.size(); i++) {
+            explosions[i].render(window,deltatime);
+     }
+    
 }
 bool Player::Activity() {
     return activity;
-}
-void Player::Reset() {
-
-}
-void Player::Win() {
-
-}
-void Player::Lose() {
-
 }

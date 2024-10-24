@@ -35,7 +35,6 @@ bool Boss::BossDefeat()
 }
 
 FloatRect Boss::getGlobalBounds() {
-	
 	return sprite.getGlobalBounds(); 
 }
 

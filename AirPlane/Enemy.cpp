@@ -30,3 +30,6 @@ void Enemy::render(RenderWindow& window) {
 FloatRect Enemy::getGlobalBounds() {
     return sprite.getGlobalBounds(); // trả về vùng bao quanh của kẻ thù
 }
+Vector2f Enemy::getPosition() {
+    return sprite.getPosition();
+}
