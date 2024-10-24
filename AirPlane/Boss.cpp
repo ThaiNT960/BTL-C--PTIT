@@ -35,7 +35,7 @@ bool Boss::BossDefeat()
 }
 
 FloatRect Boss::getGlobalBounds() {
-	if (Health <= 0) return FloatRect(0,0,0,0); 
+	
 	return sprite.getGlobalBounds(); 
 }
 
