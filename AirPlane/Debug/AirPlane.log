@@ -1,2 +1,11 @@
 ﻿  Boss.cpp
-  AirPlane.vcxproj -> C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\Debug\AirPlane.exe
+  Bullet.cpp
+  Enemy.cpp
+C:\Users\ADMIN88\BTL-C--PTIT\AirPlane\Enemy.cpp(9,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\ADMIN88\BTL-C--PTIT\AirPlane\Enemy.cpp(15,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+  player.cpp
+  Score.cpp
+  Generating Code...
+  LINK : C:\Users\ADMIN88\BTL-C--PTIT\Debug\AirPlane.exe not found or not built by the last incremental link; performing full link
+  AirPlane.vcxproj -> C:\Users\ADMIN88\BTL-C--PTIT\Debug\AirPlane.exe
