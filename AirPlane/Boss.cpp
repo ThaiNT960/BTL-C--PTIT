@@ -42,3 +42,4 @@ void Boss::decrease(int tmp)
 {
 	Health -= tmp;
 }
+// hello

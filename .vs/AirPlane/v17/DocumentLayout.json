@@ -58,8 +58,7 @@
               "RelativeToolTip": "AirPlane\\Animation.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAwwBgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-24T17:30:07.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T17:30:07.801Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "AirPlane\\Animation.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-24T17:29:48.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T17:29:48.693Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "AirPlane\\Boss.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-23T09:25:32.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T09:25:32.28Z"
             },
             {
               "$type": "Document",
@@ -97,8 +94,7 @@
               "RelativeToolTip": "AirPlane\\Boss.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-23T09:25:13.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T09:25:13.199Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "AirPlane\\player.cpp",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAAGEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-23T07:34:54.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T07:34:54.936Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "AirPlane\\player.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-23T07:34:24.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T07:34:24.547Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "AirPlane\\Bullet.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-21T03:58:59.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T03:58:59.329Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "AirPlane\\Bullet.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-22T16:31:56.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T16:31:56.02Z"
             }
           ]
         }
