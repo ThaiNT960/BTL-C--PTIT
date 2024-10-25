@@ -13,4 +13,5 @@ private:
     Texture texture;
     Sprite sprite;
     float speed;
+  
 };

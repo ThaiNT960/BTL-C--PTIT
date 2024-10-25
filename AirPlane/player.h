@@ -5,6 +5,7 @@
 #include "Enemy.h"
 #include "Score.h"
 #include "Boss.h"
+#include "Explosion.h"
 using namespace std;
 using namespace sf;
 
@@ -12,18 +13,16 @@ class Player {
 public:
     Player();
     void update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss& boss);
-    void render(RenderWindow& window);
+    void render(RenderWindow& window, float dentatime);
     void shoot(); // Hàm bắn đạn
     FloatRect getGlobalBounds();
     bool Activity();
-    void Reset();
-    void Win();
-    void Lose();
 private:
     Texture texture;
     Sprite sprite;
     float speed;
-    vector<Bullet> bullets; // Danh sách đạn bắn ra
+    vector<Bullet> bullets;// Danh sách đạn bắn ra
+    vector<Explosion> explosions;
     bool canShoot;
     bool activity = true;
 };
