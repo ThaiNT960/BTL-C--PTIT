@@ -1,2 +1,5 @@
-﻿  BossBullet.cpp
+﻿  main.cpp
+  player.cpp
+C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\AirPlane\player.cpp(102,23): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   AirPlane.vcxproj -> C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\Debug\AirPlane.exe

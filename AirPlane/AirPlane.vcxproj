@@ -141,7 +141,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
@@ -154,7 +154,7 @@
     <ClInclude Include="BossBullet.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Score.h" />

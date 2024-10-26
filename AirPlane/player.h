@@ -5,7 +5,7 @@
 #include "Enemy.h"
 #include "Score.h"
 #include "Boss.h"
-#include "Explosion.h"
+#include "Animation.h"
 using namespace std;
 using namespace sf;
 
