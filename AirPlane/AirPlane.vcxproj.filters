@@ -42,6 +42,12 @@
     <ClCompile Include="MainMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallexBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="player.h">
@@ -67,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="MainMenu.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParallexBackground.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

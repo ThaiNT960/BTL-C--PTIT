@@ -142,10 +142,12 @@
     </ClCompile>
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Layer.cpp" />
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="ParallexBackground.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="Score.cpp" />
   </ItemGroup>
@@ -155,7 +157,9 @@
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="Layer.h" />
     <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="ParallexBackground.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Score.h" />
   </ItemGroup>

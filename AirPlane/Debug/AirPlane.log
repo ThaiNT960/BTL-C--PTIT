@@ -1,5 +1,24 @@
-﻿  main.cpp
-  player.cpp
-C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\AirPlane\player.cpp(102,23): warning C4018: '<': signed/unsigned mismatch
+﻿  Layer.cpp
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:         with
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:         [
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:             T=int
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:         ]
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:         and
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:         [
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:             T=float
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(17,50): warning C4244:         ]
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(27,41): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(27,41): warning C4244:         with
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(27,41): warning C4244:         [
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(27,41): warning C4244:             T=int
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(27,41): warning C4244:         ]
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(30,41): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(30,41): warning C4244:         with
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(30,41): warning C4244:         [
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(30,41): warning C4244:             T=int
+C:\GitHub\BTL-C--PTIT\AirPlane\Layer.cpp(30,41): warning C4244:         ]
+  ParallexBackground.cpp
+  main.cpp
   Generating Code...
-  AirPlane.vcxproj -> C:\Users\ADMIN88\Desktop\BTL C++\AirPlane\AirPlane\Debug\AirPlane.exe
+  AirPlane.vcxproj -> C:\GitHub\BTL-C--PTIT\Debug\AirPlane.exe
