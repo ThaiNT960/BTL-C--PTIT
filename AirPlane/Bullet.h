@@ -8,7 +8,7 @@ public:
     void update(float deltaTime);
     void render(RenderWindow& window);
     FloatRect getGlobalBounds(); // hàm lấy vùng bao quanh đạn
-
+    Vector2f getPosition();
 private:
     Texture texture;
     Sprite sprite;

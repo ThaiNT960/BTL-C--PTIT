@@ -1,6 +1,5 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-// "Explosion.h"
 #include <vector>
 using namespace std;
 using namespace sf;
@@ -18,3 +17,15 @@ private:
     bool active;
     float time;
 };
+
+
+class Heart {
+public:
+    Heart();
+    void Render(RenderWindow& window);
+    bool Damaged();
+private:
+    int currentheart;
+    vector<Texture> textures;
+    Sprite sprite;
+ };

@@ -6,32 +6,23 @@ Player::Player() {
     sprite.setPosition(100, 300);
     speed = 800.0f;
     canShoot = true;
+    activity = true;
 }
 
-void Player::shoot()
-{
-    //Vị trí đạn bắn ra
-    bullets.emplace_back(sprite.getPosition().x + sprite.getGlobalBounds().width,
+void Player::shoot() {
+        bullets.emplace_back(sprite.getPosition().x + sprite.getGlobalBounds().width,
         sprite.getPosition().y + sprite.getGlobalBounds().height / 2);
 }
-FloatRect Player::getGlobalBounds() {
-    return sprite.getGlobalBounds();
-}
+FloatRect Player::getGlobalBounds() { return sprite.getGlobalBounds();}
+   
+
 
 void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss& boss) {
     //Bắt phím di chuyển của người chơi
-    if (Keyboard::isKeyPressed(Keyboard::W) && sprite.getPosition().y - speed * deltaTime > 0) {
-        sprite.move(0, -speed * deltaTime);
-    }
-    else if (Keyboard::isKeyPressed(Keyboard::S) && sprite.getPosition().y + sprite.getGlobalBounds().height + speed * deltaTime < 843) {
-        sprite.move(0, speed * deltaTime);
-    }
-    else if (Keyboard::isKeyPressed(Keyboard::D) && sprite.getPosition().x + sprite.getGlobalBounds().width + speed * deltaTime < 1500) {
-        sprite.move(speed * deltaTime, 0);
-    }
-    else if (Keyboard::isKeyPressed(Keyboard::A) && sprite.getPosition().x - speed * deltaTime > 0) {
-        sprite.move(-speed * deltaTime, 0);
-    }
+    if (Keyboard::isKeyPressed(Keyboard::W) && sprite.getPosition().y - speed * deltaTime > 0) sprite.move(0, -speed * deltaTime);
+    else if (Keyboard::isKeyPressed(Keyboard::S) && sprite.getPosition().y + sprite.getGlobalBounds().height + speed * deltaTime < 843) sprite.move(0, speed * deltaTime);
+    else if (Keyboard::isKeyPressed(Keyboard::D) && sprite.getPosition().x + sprite.getGlobalBounds().width + speed * deltaTime < 1500) sprite.move(speed * deltaTime, 0);
+    else if (Keyboard::isKeyPressed(Keyboard::A) && sprite.getPosition().x - speed * deltaTime > 0) sprite.move(-speed * deltaTime, 0);
 
     // Kiểm tra việc bắn đạn
     if (Keyboard::isKeyPressed(Keyboard::Space) && canShoot) {
@@ -47,7 +38,6 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
     // Cập nhật vị trí các viên đạn and kiểm tra va chạm với kẻ thù
     for (auto it = bullets.begin(); it != bullets.end();) {
         it->update(deltaTime); // Goi hàm update trong bullet.h,deltaTime
-
         // kiểm tra va chạm giữa đạn và enemy
         bool hit = false;
         for (auto& enemy : enemies) {
@@ -57,7 +47,7 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
                 explosions.emplace_back(t);
                 enemy.reset(); // đặt lại kẻ thù
                 score.tăng(10); //tăng 10 điểm
-            //    if (score.getScore() >= 200) activity = false;
+                if (score.getScore() >= 200) activity = false;
                 hit = true;
                 break;
             }
@@ -71,7 +61,10 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
     for (auto it = enemies.begin(); it != enemies.end();) {
         bool hit = false;
         if (it->getGlobalBounds().intersects(sprite.getGlobalBounds())) {
-            activity = false;
+            heart.Damaged();
+            Explosion t(it->getPosition());
+            explosions.emplace_back(t);
+            it->reset();
             break;
         }
         if (!hit) it++;
@@ -87,20 +80,27 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
         }
         if (!hit)++it;
     }
-    //Kiểm tra va chạm giữa player vs enemies
-    if (boss.getGlobalBounds().intersects(sprite.getGlobalBounds())) {
-            activity = false;
-           }
-       
+    
 }
 
 void Player::render(RenderWindow& window, float deltatime) {
     window.draw(sprite);
-    for (auto& bullet : bullets) {
-        bullet.render(window);
+    heart.Render(window);
+    
+    for (int i = 0; i < bullets.size(); i++) {
+        if (bullets[i].getPosition().x > 1500) {
+            bullets.erase(bullets.begin() + i);
+            i--;
+        }
+        else bullets[i].render(window);
     }
     for (int i = 0; i < explosions.size(); i++) {
-        explosions[i].render(window, deltatime);
+        if (!explosions[i].isActive()) {
+            explosions.erase(explosions.begin() + i);
+            i--;
+        }
+        else  explosions[i].render(window, deltatime);
+       
     }
 
 }

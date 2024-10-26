@@ -7,7 +7,7 @@ Score::Score() {
     scoreText.setFont(font);
     scoreText.setCharacterSize(18);        // kích thước 
     scoreText.setFillColor(Color::White);  // màu 
-    scoreText.setPosition(10, 10);         // vị trí hiển thị
+    scoreText.setPosition(1300, 10);         // vị trí hiển thị
 }
 
 void Score::tăng(int tmp) {

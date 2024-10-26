@@ -24,5 +24,6 @@ private:
     vector<Bullet> bullets;// Danh sách đạn bắn ra
     vector<Explosion> explosions;
     bool canShoot;
-    bool activity = true;
+    bool activity;
+    Heart heart;
 };

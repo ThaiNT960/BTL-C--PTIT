@@ -1,5 +1,9 @@
 ﻿#include "Animation.h"
 
+
+
+
+//Hiệu ứng nổ khi địch bị hạ
 Explosion::Explosion(Vector2f position) {
     currentSprite = 0;
     active = true;
@@ -22,7 +26,7 @@ void Explosion::render(RenderWindow& window, float deltatime) {
         sprite.setTexture(textures[currentSprite]); // Đặt texture tương ứng
         window.draw(sprite); // Vẽ hiệu ứng
 
-        if (time > 300 * deltatime) {
+        if (time > 100 * deltatime) {
             currentSprite++;
             time = 0;
         }
@@ -34,4 +38,31 @@ void Explosion::render(RenderWindow& window, float deltatime) {
 
 bool Explosion::isActive() const {
     return active; // Trả về trạng thái hoạt động của hiệu ứng
+}
+
+
+
+// Phần mạng sống của nhân vật
+Heart::Heart() {
+    currentheart = 0;
+    for (int i = 0; i < 5; i++) {
+        Texture texture;
+        if (texture.loadFromFile("../Data/heart_" + to_string(i) + ".png")) {
+            textures.push_back(texture);
+        }
+    }
+    sprite.setPosition(0, 0);
+}
+void Heart::Render(RenderWindow& window) {
+    sprite.setTexture(textures[currentheart]);
+    sprite.setScale(2, 2);
+    window.draw(sprite);
+}
+bool Heart::Damaged() {
+    currentheart++;
+    if (currentheart > 4) {
+        currentheart = 4;
+        return false;
+    }
+    else return true;
 }
