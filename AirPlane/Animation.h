@@ -27,5 +27,5 @@ public:
 private:
     int currentheart;
     vector<Texture> textures;
-    Sprite sprite;
+    vector<Sprite> sprites;
  };

@@ -61,7 +61,7 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
     for (auto it = enemies.begin(); it != enemies.end();) {
         bool hit = false;
         if (it->getGlobalBounds().intersects(sprite.getGlobalBounds())) {
-            heart.Damaged();
+            activity=heart.Damaged();
             Explosion t(it->getPosition());
             explosions.emplace_back(t);
             it->reset();

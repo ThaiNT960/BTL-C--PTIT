@@ -71,7 +71,7 @@ int main() {
         if (!inMenu) {
             parallexBackground.Update(deltaTime); // Cập nhật nền cuộn nhiều lớp
 
-            if (player.Activity()) {
+            if (player.Activity()&&!boss.BossDefeat()) {
                 player.update(deltaTime, enemies, score, boss);
                 if (score.getScore() >= 100 && !bossActive) {
                     bossActive = true;
@@ -95,7 +95,7 @@ int main() {
             player.render(window, deltaTime);
             score.render(window);
             if (bossActive) {
-                boss.render(window);
+                boss.render(window); 
             }
             else {
                 for (auto& enemy : enemies) {
