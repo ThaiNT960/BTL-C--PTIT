@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,24 +23,12 @@
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -82,46 +82,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Animation.h",
               "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Animation.h",
               "RelativeDocumentMoniker": "AirPlane\\Animation.h",
               "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Animation.h",
               "RelativeToolTip": "AirPlane\\Animation.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-26T03:42:45.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Animation.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Animation.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Animation.cpp",
               "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Animation.cpp",
               "RelativeToolTip": "AirPlane\\Animation.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-26T03:42:13.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "player.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.cpp",
               "RelativeDocumentMoniker": "AirPlane\\player.cpp",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.cpp",
-              "RelativeToolTip": "AirPlane\\player.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAD8AAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.cpp*",
+              "RelativeToolTip": "AirPlane\\player.cpp*",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T07:34:54.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "player.h",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.h",
+              "RelativeDocumentMoniker": "AirPlane\\player.h",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.h",
+              "RelativeToolTip": "AirPlane\\player.h",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-23T07:34:24.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Bullet.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Bullet.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Bullet.cpp",
@@ -140,9 +153,10 @@
               "RelativeDocumentMoniker": "AirPlane\\Score.cpp",
               "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\Score.cpp",
               "RelativeToolTip": "AirPlane\\Score.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-26T18:02:02.857Z"
+              "WhenOpened": "2024-10-26T18:02:02.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -159,18 +173,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "player.h",
-              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.h",
-              "RelativeDocumentMoniker": "AirPlane\\player.h",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\player.h",
-              "RelativeToolTip": "AirPlane\\player.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-23T07:34:24.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Desktop\\BTLC\u002B\u002B\\BTL-C--PTIT\\AirPlane\\main.cpp",
               "RelativeDocumentMoniker": "AirPlane\\main.cpp",
@@ -178,8 +180,7 @@
               "RelativeToolTip": "AirPlane\\main.cpp",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAAEkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-23T07:37:36.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T07:37:36.04Z"
             },
             {
               "$type": "Document",

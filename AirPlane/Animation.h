@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 #include <SFML/Graphics.hpp>
 #include <vector>
 using namespace std;
 using namespace sf;
-
+// Vụ nổ
 class Explosion {
 public:
     Explosion(Vector2f position);
@@ -17,8 +17,7 @@ private:
     bool active;
     float time;
 };
-
-
+//Trái tim của player
 class Heart {
 public:
     Heart();
@@ -29,3 +28,4 @@ private:
     vector<Texture> textures;
     vector<Sprite> sprites;
  };
+//Tia đạn khi bắn chúng Boss

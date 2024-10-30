@@ -1,4 +1,4 @@
-﻿  Animation.cpp
-C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\Animation.cpp(33,27): warning C4018: '>=': signed/unsigned mismatch
-C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\Animation.cpp(57,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  player.cpp
+C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\player.cpp(93,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\player.cpp(100,23): warning C4018: '<': signed/unsigned mismatch
   AirPlane.vcxproj -> C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\Debug\AirPlane.exe

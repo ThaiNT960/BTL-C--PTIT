@@ -17,8 +17,11 @@ public:
     void shoot(); // Hàm bắn đạn
     FloatRect getGlobalBounds();
     bool Activity();
+    void Damaged(float t);
+    void Blink(float t);
 private:
-    Texture texture;
+    Texture texture0;
+    Texture texture1;//ảnh phụ
     Sprite sprite;
     float speed;
     vector<Bullet> bullets;// Danh sách đạn bắn ra
@@ -26,4 +29,6 @@ private:
     bool canShoot;
     bool activity;
     Heart heart;
+    float clock;
+    bool damaged;
 };
