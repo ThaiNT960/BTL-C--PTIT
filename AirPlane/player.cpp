@@ -1,23 +1,23 @@
 ﻿#include "Player.h"
 
 Player::Player() {
-    if (!texture0.loadFromFile("../Data/ship1.png")) {}
-    if(!texture1.loadFromFile("../Data/ship2.png")){}
-    //sprite.setTexture(texture0);
+    if (!texture0.loadFromFile("../Data/ship1.png")) {};
+    if (!texture1.loadFromFile("../Data/ship2.png")) {};
+    sprite.setTexture(texture0);
     sprite.setPosition(100, 300);
-    speed = 800.0f;
+    speed = 600.0f;
     canShoot = true;
     activity = true;
     clock = 0;
+    clock1 = 0;
     damaged = false;
+    bullet.setPosition(sprite.getPosition());
 }
 
 void Player::shoot() {
-        bullets.emplace_back(sprite.getPosition().x + sprite.getGlobalBounds().width,
-        sprite.getPosition().y + sprite.getGlobalBounds().height / 2);
+    bullets.push_back(bullet);
 }
 FloatRect Player::getGlobalBounds() { return sprite.getGlobalBounds();}
-   
 
 
 void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss& boss) {
@@ -26,17 +26,20 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
     else if (Keyboard::isKeyPressed(Keyboard::S) && sprite.getPosition().y + sprite.getGlobalBounds().height + speed * deltaTime < 843) sprite.move(0, speed * deltaTime);
     else if (Keyboard::isKeyPressed(Keyboard::D) && sprite.getPosition().x + sprite.getGlobalBounds().width + speed * deltaTime < 1500) sprite.move(speed * deltaTime, 0);
     else if (Keyboard::isKeyPressed(Keyboard::A) && sprite.getPosition().x - speed * deltaTime > 0) sprite.move(-speed * deltaTime, 0);
-
+    bullet.setPosition(sprite.getPosition());
     // Kiểm tra việc bắn đạn
-    if (Keyboard::isKeyPressed(Keyboard::Space) && canShoot) {
+    //if (Keyboard::isKeyPressed(Keyboard::Space) && canShoot) {
+        //shoot();
+        //canShoot = false;
+    //}
+    //if (!Keyboard::isKeyPressed(Keyboard::Space)) {
+        //canShoot = true; // Khi nhả phím,cho phép bắn đạn 
+    //}
+    clock1 += deltaTime;
+    if (clock1 >= 0.15) {
         shoot();
-        canShoot = false;
+        clock1 = 0;
     }
-    if (!Keyboard::isKeyPressed(Keyboard::Space)) {
-        canShoot = true; // Khi nhả phím,cho phép bắn đạn 
-    }
-
-
 
     // Cập nhật vị trí các viên đạn and kiểm tra va chạm với kẻ thù
     for (auto it = bullets.begin(); it != bullets.end();) {
@@ -77,7 +80,7 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
         bool hit = false;
         if (it->getGlobalBounds().intersects(boss.getGlobalBounds())) {
             it = bullets.erase(it);
-            boss.decrease(10);
+            boss.decrease(1);
             hit = true;
         }
         if (!hit)++it;
@@ -112,15 +115,15 @@ bool Player::Activity() {
 }
 void Player::Damaged(float t) {
     activity = heart.Damaged();
-    clock = 3000 * t;
+    clock = 3000*t;
     damaged = true;
 }
 void Player::Blink(float t) {
-    if (clock >= 3000 * t) sprite.setTexture(texture1);
-    else if (clock >= 2000 * t) sprite.setTexture(texture0);
-    else if (clock >= 1000 * t) sprite.setTexture(texture1);
+    if (clock >= 3000*t ) sprite.setTexture(texture1);
+    else if (clock >= 2000*t ) sprite.setTexture(texture0);
+    else if (clock >= 1000*t ) sprite.setTexture(texture1);
     else sprite.setTexture(texture0);
-    clock -= t;
+    clock -=t;
     if (clock < 0) {
         clock = 0;
         damaged = false;

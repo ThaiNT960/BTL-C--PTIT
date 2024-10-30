@@ -29,6 +29,7 @@ private:
     bool canShoot;
     bool activity;
     Heart heart;
-    float clock;
+    float clock,clock1;
     bool damaged;
+    Bullet bullet;
 };
