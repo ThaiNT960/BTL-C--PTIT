@@ -10,6 +10,12 @@ Boss::Boss()
 	shootCooldown = 2.0f;    // Sau 2s lại bắn tiếp
 	shootCooldownTimer = 0.f; 
 	active = false;
+
+	// Thiết lập thanh HP
+	healthBar.setFillColor(Color::Blue);
+	healthBar.setSize(Vector2f(Health*0.7f,10.f)); // Kích thước HP
+	healthBar1.setFillColor(Color(100,100,100,150));
+	healthBar1.setSize(Vector2f(280.f,10.f)); // Kích thước nền 
 }
 
 void Boss::update(float deltaTime)
@@ -34,6 +40,8 @@ void Boss::update(float deltaTime)
 	for (auto& bullet : bullets) {
 		bullet.update(deltaTime);
 	}
+	// Cập nhật thanh HP
+	updateHealthBar();
 }
 bool Boss::BossDefeat()
 {
@@ -81,4 +89,15 @@ void Boss::render(RenderWindow& window)
 	for (auto& bullet : bullets) {
 		bullet.render(window);
 	}
+	// Vẽ thanh máu
+	window.draw(healthBar1);
+	window.draw(healthBar);
+}
+void Boss::updateHealthBar()
+{
+	// Cập nhật kích thước thanh HP
+	healthBar.setSize(Vector2f(Health*0.7f,10.f));
+	// Đặt vị trí thanh HP
+	healthBar.setPosition(sprite.getPosition().x,sprite.getPosition().y - 20.f);
+	healthBar1.setPosition(sprite.getPosition().x,sprite.getPosition().y - 20.f);
 }

@@ -24,4 +24,7 @@ private:
 	float shootCooldown ;     // Thời gian giữa hai lần bắn liên tiếp 
 	float shootCooldownTimer ; // Khởi tạo bộ đếm thời gian
 	bool active;
+	RectangleShape healthBar;      // Thanh HP
+	RectangleShape healthBar1;  // Thanh nền
+	void updateHealthBar(); // Cập nhật thanh HP 
  };
