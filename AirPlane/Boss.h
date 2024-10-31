@@ -13,6 +13,8 @@ public :
 	FloatRect getGlobalBounds();
 	void decrease(int tmp);
 	void shoot();
+	void setActive(bool state); 
+	bool isActive(); 
 private:
 	Texture texture;
 	Sprite sprite;
@@ -21,4 +23,5 @@ private:
 	vector<BossBullet> bullets;  
 	float shootCooldown ;     // Thời gian giữa hai lần bắn liên tiếp 
 	float shootCooldownTimer ; // Khởi tạo bộ đếm thời gian
+	bool active;
  };

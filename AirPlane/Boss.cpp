@@ -9,6 +9,7 @@ Boss::Boss()
 	Health = 400;
 	shootCooldown = 2.0f;    // Sau 2s lại bắn tiếp
 	shootCooldownTimer = 0.f; 
+	active = false;
 }
 
 void Boss::update(float deltaTime)
@@ -41,7 +42,7 @@ bool Boss::BossDefeat()
 }
 
 FloatRect Boss::getGlobalBounds() {
-	if (Health <= 0) return FloatRect(0, 0, 0, 0);
+	if (Health <= 0) return FloatRect(0,0,0,0);
 	return sprite.getGlobalBounds(); 
 }
 
@@ -66,6 +67,13 @@ void Boss::shoot()
 		bullet.setDirection(pos);
 		bullets.push_back(bullet);
 	}
+}
+void Boss::setActive(bool state) {
+	active = state;
+}
+
+bool Boss::isActive() {
+	return active;
 }
 void Boss::render(RenderWindow& window)
 {

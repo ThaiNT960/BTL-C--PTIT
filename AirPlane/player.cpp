@@ -80,7 +80,7 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
         bool hit = false;
         if (it->getGlobalBounds().intersects(boss.getGlobalBounds())) {
             it = bullets.erase(it);
-            boss.decrease(1);
+            boss.decrease(10);
             hit = true;
         }
         if (!hit)++it;

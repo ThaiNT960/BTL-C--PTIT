@@ -7,14 +7,14 @@
 #include "MainMenu.h" 
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(1500, 843), "AirPlane");
+    RenderWindow window(VideoMode(1500, 843), "AirPlane");
 
     // Tạo menu chính
     MainMenu mainMenu(1500, 843);
 
     // Tạo nền tối
-    sf::RectangleShape darkOverlay(sf::Vector2f(1500, 843));
-    darkOverlay.setFillColor(sf::Color(0, 0, 0, 150)); // Màu đen với độ mờ 150
+    RectangleShape darkOverlay(Vector2f(1500, 843));
+    darkOverlay.setFillColor(Color(0, 0, 0, 150)); // Màu đen với độ mờ 150
 
     // Khởi tạo nền cuộn nhiều lớp
     ParallexBackground parallexBackground;
@@ -25,28 +25,28 @@ int main() {
     Score score;
     Boss boss;
     bool bossActive = false;
-    std::vector<Enemy> enemies(3); // Tạo 3 kẻ thù
-    sf::Clock clock;
+    vector<Enemy> enemies(3); // Tạo 3 kẻ thù
+    Clock clock;
     bool inMenu = true;
 
     while (window.isOpen()) {
         float deltaTime = clock.restart().asSeconds();
-        sf::Event event;
+        Event event;
         while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {
+            if (event.type == Event::Closed) {
                 window.close();
             }
 
             // Xử lý menu
             if (inMenu) {
-                if (event.type == sf::Event::KeyReleased) {
-                    if (event.key.code == sf::Keyboard::W) {
+                if (event.type == Event::KeyReleased) {
+                    if (event.key.code ==Keyboard::W) {
                         mainMenu.MoveUp();
                     }
-                    if (event.key.code == sf::Keyboard::S) {
+                    if (event.key.code == Keyboard::S) {
                         mainMenu.MoveDown();
                     }
-                    if (event.key.code == sf::Keyboard::Space) {
+                    if (event.key.code == Keyboard::Space) {
                         int selection = mainMenu.MainMenuPressed();
                         switch (selection) {
                         case 0: // Bắt đầu trò chơi
@@ -71,15 +71,18 @@ int main() {
         if (!inMenu) {
             parallexBackground.Update(deltaTime); // Cập nhật nền cuộn nhiều lớp
 
-            if (player.Activity()&&!boss.BossDefeat()) {
+            if (player.Activity() && !boss.BossDefeat()) {
                 player.update(deltaTime, enemies, score, boss);
-                if (score.getScore() >= 100 && !bossActive) {
-                    bossActive = true;
+                if (score.getScore() >= 100 && !boss.isActive()) {
+                    boss.setActive(true) ;
+                    for (auto& enemy : enemies) {
+                        enemy.setActive(false);
+                    }
                 }
-                if (bossActive) {
+                if (boss.isActive()) {
                     boss.update(deltaTime);
                     if (boss.BossDefeat()) {
-                        bossActive = false;
+                        boss.setActive(false); 
                     }
                 }
                 else {
@@ -94,7 +97,7 @@ int main() {
             parallexBackground.Render(&window); // Vẽ nền cuộn nhiều lớp
             player.render(window, deltaTime);
             score.render(window);
-            if (bossActive) {
+            if (boss.isActive()) {
                 boss.render(window); 
             }
             else {
@@ -120,5 +123,4 @@ int main() {
         window.display();
     }
 
-    return 0;
 }

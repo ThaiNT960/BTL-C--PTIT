@@ -9,6 +9,7 @@ Enemy::Enemy() {
     float randomY = rand() % 750;
     sprite.setPosition(1500, randomY);
     speed = 300.0f;
+    active = true;
 }
 void Enemy::reset() {
     // Đặt lại vị trí kẻ thù khi bị tiêu diệt or ra khỏi màn hình
@@ -28,8 +29,12 @@ void Enemy::render(RenderWindow& window) {
     window.draw(sprite);
 }
 FloatRect Enemy::getGlobalBounds() {
-    return sprite.getGlobalBounds(); // trả về vùng bao quanh của kẻ thù
+    if (active)  return sprite.getGlobalBounds();
+      return  FloatRect(0,0,0,0);
 }
 Vector2f Enemy::getPosition() {
     return sprite.getPosition();
+}
+void Enemy::setActive(bool state) {
+    active = state; 
 }
