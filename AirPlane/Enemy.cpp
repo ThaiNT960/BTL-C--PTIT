@@ -4,6 +4,8 @@ Texture Enemy::texture;
 Enemy::Enemy() {
     if (!texture.loadFromFile("../Data/enemy2.png")) {}
     sprite.setTexture(texture);
+    if (!explosionBuffer.loadFromFile("../Data/explosion-detonation-94515.wav")) {}
+    explosionSound.setBuffer(explosionBuffer);
 
     // random y từ 0 đến 750 
     float randomY = rand() % 750;
@@ -42,4 +44,7 @@ void Enemy::Reset() {
     active = true;
     float randomY = rand() % 750;
     sprite.setPosition(1500, randomY);
+}
+void Enemy::playExplosionSound() {
+    explosionSound.play();  // Phát âm thanh nổ
 }

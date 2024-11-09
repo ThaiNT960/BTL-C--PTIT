@@ -1,5 +1,4 @@
-﻿  Enemy.cpp
-C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\Enemy.cpp(9,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\Enemy.cpp(16,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\Enemy.cpp(43,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  AirPlane.vcxproj -> C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\Debug\AirPlane.exe
+﻿  player.cpp
+C:\GitHub\BTL-C--PTIT\AirPlane\player.cpp(96,23): warning C4018: '<': signed/unsigned mismatch
+C:\GitHub\BTL-C--PTIT\AirPlane\player.cpp(103,23): warning C4018: '<': signed/unsigned mismatch
+  AirPlane.vcxproj -> C:\GitHub\BTL-C--PTIT\Debug\AirPlane.exe

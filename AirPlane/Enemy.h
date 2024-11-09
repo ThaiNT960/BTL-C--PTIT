@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 using namespace sf;
 
 class Enemy {
@@ -12,11 +13,13 @@ public:
     Vector2f getPosition();
     void setActive(bool state);
     void Reset();
+    void playExplosionSound();
     
 private:
     static Texture texture; // texture chung cho tất cả kẻ thù
     Sprite sprite;
     float speed;
     bool active;
-    
+    SoundBuffer explosionBuffer;  // Buffer âm thanh nổ
+    Sound explosionSound;
 };

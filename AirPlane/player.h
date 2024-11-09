@@ -36,4 +36,6 @@ private:
     Bullet bullet;
     SoundBuffer shootBuffer;
     Sound shootSound;
+    SoundBuffer collisionBuffer;
+    Sound collisionSound;
 };

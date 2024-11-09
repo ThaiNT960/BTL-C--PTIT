@@ -4,8 +4,10 @@ Player::Player() {
     if (!texture0.loadFromFile("../Data/ship1.png")) {};
     if (!texture1.loadFromFile("../Data/ship2.png")) {};
     if (!shootBuffer.loadFromFile("../Data/soundshoot.ogg")) {};
+    if (!collisionBuffer.loadFromFile("../Data/break-boom-fx-240235.wav")) {};
     sprite.setTexture(texture0);
     shootSound.setBuffer(shootBuffer);
+    collisionSound.setBuffer(collisionBuffer);
     sprite.setPosition(100, 300);
     speed = 600.0f;
     canShoot = true;
@@ -45,6 +47,7 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
             
             if (it->getGlobalBounds().intersects(enemy.getGlobalBounds())) {
                 it = bullets.erase(it); // xóa đạn
+                enemy.playExplosionSound();
                 Explosion t(enemy.getPosition());
                 explosions.emplace_back(t);
                 enemy.reset(); // đặt lại kẻ thù
@@ -65,6 +68,8 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
             Explosion t(it->getPosition());
             explosions.emplace_back(t);
             it->reset();
+            collisionSound.play();
+            it->playExplosionSound();
             break;
         }
         if (!hit) it++;
