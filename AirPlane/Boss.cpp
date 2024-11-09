@@ -133,3 +133,15 @@ void Boss::Reset() {
     healthBar1.setFillColor(Color(100, 100, 100, 150));
     healthBar1.setSize(Vector2f(280.f, 10.f)); // Kích thước nền
 }
+bool Boss::Attack(FloatRect t) {
+    bool hit = false;
+    for (auto it = bullets.begin(); it != bullets.end();) {
+        if (it->getGlobalBounds().intersects(t)) {
+            it = bullets.erase(it);
+            hit = true;
+            break;
+        }
+        if (!hit)++it;
+    }
+    return hit;
+}

@@ -18,7 +18,7 @@ public:
     void setActive(bool state);
     bool isActive();
     void Reset();
-
+    bool Attack(FloatRect);
 private:
     Texture texture;
     Sprite sprite;

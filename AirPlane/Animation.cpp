@@ -71,5 +71,8 @@ bool Heart::Damaged() {
     else return true;
 }
 void Heart::Reset() {
+    for (int i = 0; i < 3; i++) {
+        sprites[i].setTexture(textures[0]);
+    }
     currentheart = 3;
 }

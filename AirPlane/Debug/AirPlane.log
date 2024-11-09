@@ -1,4 +1,4 @@
 ﻿  player.cpp
-C:\GitHub\BTL-C--PTIT\AirPlane\player.cpp(96,23): warning C4018: '<': signed/unsigned mismatch
-C:\GitHub\BTL-C--PTIT\AirPlane\player.cpp(103,23): warning C4018: '<': signed/unsigned mismatch
-  AirPlane.vcxproj -> C:\GitHub\BTL-C--PTIT\Debug\AirPlane.exe
+C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\player.cpp(102,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\AirPlane\player.cpp(109,23): warning C4018: '<': signed/unsigned mismatch
+  AirPlane.vcxproj -> C:\Users\admin\OneDrive\Desktop\BTLC++\BTL-C--PTIT\Debug\AirPlane.exe

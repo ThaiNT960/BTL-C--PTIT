@@ -85,7 +85,13 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
         }
         if (!hit)++it;
     }
-    
+    //Kiểm tra va chạm giữa player và bossbullet
+    if (!damaged&&boss.isActive()) {
+        bool sum = boss.Attack(getGlobalBounds());
+        if(sum) Damaged(deltaTime);
+    }
+    //Ktra va chạm giữa player và bulle;
+    if (boss.isActive()&&!damaged && getGlobalBounds().intersects(boss.getGlobalBounds())) Damaged(deltaTime);
 }
 
 void Player::render(RenderWindow& window, float deltatime) {
