@@ -11,7 +11,7 @@ public:
     FloatRect getGlobalBounds(); // hàm lấy vùng bao quanh kẻ thù
     Vector2f getPosition();
     void setActive(bool state);
-   
+    void Reset();
     
 private:
     static Texture texture; // texture chung cho tất cả kẻ thù

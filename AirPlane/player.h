@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <vector>
 #include "Bullet.h"
 #include "Enemy.h"
@@ -19,6 +20,7 @@ public:
     bool Activity();
     void Damaged(float t);
     void Blink(float t);
+    void Reset();
 private:
     Texture texture0;
     Texture texture1;//ảnh phụ
@@ -29,7 +31,9 @@ private:
     bool canShoot;
     bool activity;
     Heart heart;
-    float clock,clock1;
+    float clock, shootClock;
     bool damaged;
     Bullet bullet;
+    SoundBuffer shootBuffer;
+    Sound shootSound;
 };

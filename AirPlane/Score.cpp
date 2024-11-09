@@ -26,3 +26,6 @@ void Score::render(sf::RenderWindow& window) {
 int Score::getScore()  {
     return score;
 }
+void Score::Reset() {
+    score = 0;
+}

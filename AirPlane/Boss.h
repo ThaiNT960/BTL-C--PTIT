@@ -15,6 +15,7 @@ public :
 	void shoot();
 	void setActive(bool state); 
 	bool isActive(); 
+	void Reset();
 private:
 	Texture texture;
 	Sprite sprite;

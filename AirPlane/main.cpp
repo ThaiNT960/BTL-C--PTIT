@@ -11,7 +11,15 @@ int main() {
 
     // Tạo menu chính
     MainMenu mainMenu(1500, 843);
-
+    //Tạo phím chuyển tiếp
+    Font font;
+    if (!font.loadFromFile("../Data/PressStart2P-Regular.TTF")) {};
+    Text Next;
+    Next.setCharacterSize(15);
+    Next.setString("Click enter to continue");
+    Next.setPosition(600, 680);
+    Next.setFillColor(Color::White);
+    Next.setFont(font);
     // Tạo nền tối
     RectangleShape darkOverlay(Vector2f(1500, 843));
     darkOverlay.setFillColor(Color(0, 0, 0, 150)); // Màu đen với độ mờ 150
@@ -100,7 +108,7 @@ int main() {
             if (boss.isActive()) {
                 boss.render(window); 
             }
-            else {
+            else if(!boss.BossDefeat()){
                 for (auto& enemy : enemies) {
                     enemy.render(window);
                 }
@@ -109,9 +117,25 @@ int main() {
             // Hiển thị khi Win hoặc Lose
             if (boss.BossDefeat()) { // Win
                 window.draw(darkOverlay);
+                window.draw(Next);
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
+                    inMenu = true;
+                    player.Reset();
+                    boss.Reset();
+                    score.Reset();
+                    for (int i = 0; i < 3; i++)enemies[i].Reset();
+                }
             }
             else if (!player.Activity()) { // Lose
                 window.draw(darkOverlay);
+                window.draw(Next);
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
+                    inMenu = true;
+                    player.Reset();
+                    boss.Reset();
+                    score.Reset();
+                    for (int i = 0; i < 3; i++)enemies[i].Reset();
+                }
             }
         }
         else { // Nếu trong menu

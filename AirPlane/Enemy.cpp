@@ -38,3 +38,8 @@ Vector2f Enemy::getPosition() {
 void Enemy::setActive(bool state) {
     active = state; 
 }
+void Enemy::Reset() {
+    active = true;
+    float randomY = rand() % 750;
+    sprite.setPosition(1500, randomY);
+}

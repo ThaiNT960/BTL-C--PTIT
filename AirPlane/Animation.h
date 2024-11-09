@@ -23,6 +23,7 @@ public:
     Heart();
     void Render(RenderWindow& window);
     bool Damaged();
+    void Reset();
 private:
     int currentheart;
     vector<Texture> textures;

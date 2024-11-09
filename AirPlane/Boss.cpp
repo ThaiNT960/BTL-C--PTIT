@@ -101,3 +101,17 @@ void Boss::updateHealthBar()
 	healthBar.setPosition(sprite.getPosition().x,sprite.getPosition().y - 20.f);
 	healthBar1.setPosition(sprite.getPosition().x,sprite.getPosition().y - 20.f);
 }
+void Boss::Reset() {
+	sprite.setPosition(1500, 200);
+	speed = 200.f;
+	Health = 400;
+	shootCooldown = 2.0f;    // Sau 2s lại bắn tiếp
+	shootCooldownTimer = 0.f;
+	active = false;
+
+	// Thiết lập thanh HP
+	healthBar.setFillColor(Color::Blue);
+	healthBar.setSize(Vector2f(Health * 0.7f, 10.f)); // Kích thước HP
+	healthBar1.setFillColor(Color(100, 100, 100, 150));
+	healthBar1.setSize(Vector2f(280.f, 10.f)); // Kích thước nền
+}

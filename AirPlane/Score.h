@@ -10,7 +10,7 @@ public:
     void reset(); // reset điểm
     void render(RenderWindow& window); 
     int getScore() ; // lấy điểm hiện tại
-
+   void Reset();
 private:
     int score; 
     Font font; 

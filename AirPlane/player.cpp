@@ -3,13 +3,15 @@
 Player::Player() {
     if (!texture0.loadFromFile("../Data/ship1.png")) {};
     if (!texture1.loadFromFile("../Data/ship2.png")) {};
+    if (!shootBuffer.loadFromFile("../Data/soundshoot.ogg")) {};
     sprite.setTexture(texture0);
+    shootSound.setBuffer(shootBuffer);
     sprite.setPosition(100, 300);
     speed = 600.0f;
     canShoot = true;
     activity = true;
     clock = 0;
-    clock1 = 0;
+    shootClock = 0;
     damaged = false;
     bullet.setPosition(sprite.getPosition());
 }
@@ -27,20 +29,13 @@ void Player::update(float deltaTime, vector<Enemy>& enemies, Score& score, Boss&
     else if (Keyboard::isKeyPressed(Keyboard::D) && sprite.getPosition().x + sprite.getGlobalBounds().width + speed * deltaTime < 1500) sprite.move(speed * deltaTime, 0);
     else if (Keyboard::isKeyPressed(Keyboard::A) && sprite.getPosition().x - speed * deltaTime > 0) sprite.move(-speed * deltaTime, 0);
     bullet.setPosition(sprite.getPosition());
-    // Kiểm tra việc bắn đạn
-    //if (Keyboard::isKeyPressed(Keyboard::Space) && canShoot) {
-        //shoot();
-        //canShoot = false;
-    //}
-    //if (!Keyboard::isKeyPressed(Keyboard::Space)) {
-        //canShoot = true; // Khi nhả phím,cho phép bắn đạn 
-    //}
-    clock1 += deltaTime;
-    if (clock1 >= 0.15) {
+ 
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && shootClock > 0.2f) {
         shoot();
-        clock1 = 0;
+        shootSound.play();
+        shootClock = 0;
     }
-
+    else shootClock += deltaTime;
     // Cập nhật vị trí các viên đạn and kiểm tra va chạm với kẻ thù
     for (auto it = bullets.begin(); it != bullets.end();) {
         it->update(deltaTime); // Goi hàm update trong bullet.h,deltaTime
@@ -128,4 +123,14 @@ void Player::Blink(float t) {
         clock = 0;
         damaged = false;
     }
+}
+void Player::Reset() {
+    sprite.setPosition(100, 300);
+    speed = 600.0f;
+    activity = true;
+    clock = 0;
+    shootClock = 0;
+    damaged = false;
+    bullet.setPosition(sprite.getPosition());
+    heart.Reset();
 }

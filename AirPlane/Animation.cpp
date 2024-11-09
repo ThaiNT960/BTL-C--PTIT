@@ -70,3 +70,6 @@ bool Heart::Damaged() {
     }
     else return true;
 }
+void Heart::Reset() {
+    currentheart = 3;
+}
