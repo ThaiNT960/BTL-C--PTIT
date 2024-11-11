@@ -36,7 +36,9 @@ int main() {
     vector<Enemy> enemies(3); // Tạo 3 kẻ thù
     Clock clock;
     bool inMenu = true;
-
+    //Tạo hiệu ứng khi thắng và thua
+    Lose animationlose;
+    //
     while (window.isOpen()) {
         float deltaTime = clock.restart().asSeconds();
         Event event;
@@ -103,7 +105,7 @@ int main() {
             // Vẽ màn hình
             window.clear();
             parallexBackground.Render(&window); // Vẽ nền cuộn nhiều lớp
-            player.render(window, deltaTime);
+            if(player.Activity())player.render(window, deltaTime);
             score.render(window);
             if (boss.isActive()) {
                 boss.render(window); 
@@ -115,7 +117,8 @@ int main() {
             }
 
             // Hiển thị khi Win hoặc Lose
-            if (boss.BossDefeat()) { // Win
+            if (boss.BossDefeat()) {// Win
+
                 window.draw(darkOverlay);
                 window.draw(Next);
                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
@@ -124,19 +127,28 @@ int main() {
                     boss.Reset();
                     score.Reset();
                     for (int i = 0; i < 3; i++)enemies[i].Reset();
+
                 }
             }
             else if (!player.Activity()) { // Lose
-                window.draw(darkOverlay);
-                window.draw(Next);
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
-                    inMenu = true;
-                    player.Reset();
-                    boss.Reset();
-                    score.Reset();
-                    for (int i = 0; i < 3; i++)enemies[i].Reset();
+                if (animationlose.isActive()) {
+                    animationlose.render(player.getPosition(), window, deltaTime);
                 }
+                else {
+                    window.draw(darkOverlay);
+                    window.draw(Next);
+                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
+                        inMenu = true;
+                        player.Reset();
+                        boss.Reset();
+                        score.Reset();
+                        for (int i = 0; i < 3; i++)enemies[i].Reset();
+                        animationlose.Reset();
+                    }
+                }
+                
             }
+            //
         }
         else { // Nếu trong menu
             window.clear();

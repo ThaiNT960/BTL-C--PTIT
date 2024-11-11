@@ -76,3 +76,30 @@ void Heart::Reset() {
     }
     currentheart = 3;
 }
+// Hiệu ứng khi end game
+Lose::Lose() {
+    currenttexture = 0;
+    clock = 0;
+    for (int i = 0; i < 63; ++i) {
+        if (textures[i].loadFromFile("../Data/lose/img-" + to_string(i+2) + ".png")) {}
+    }
+}
+void Lose::render(Vector2f position, RenderWindow& window, float deltatime) {
+    sprite.setPosition(position.x-180,position.y-160);
+    sprite.setTexture(textures[currenttexture]);
+    sprite.setScale(0.8f, 0.8f);
+    window.draw(sprite);
+    clock += deltatime;
+    if (clock > 0.05f) {
+        clock = 0;
+        currenttexture++;
+    }
+}
+bool Lose::isActive() {
+    if (currenttexture < 63) return true;
+    else return false;
+}
+void Lose::Reset() {
+    currenttexture = 0;
+    clock = 0;
+}

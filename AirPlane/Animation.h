@@ -3,6 +3,8 @@
 #include <vector>
 using namespace std;
 using namespace sf;
+
+
 // Vụ nổ
 class Explosion {
 public:
@@ -17,6 +19,9 @@ private:
     bool active;
     float time;
 };
+
+
+
 //Trái tim của player
 class Heart {
 public:
@@ -30,3 +35,19 @@ private:
     vector<Sprite> sprites;
  };
 //Tia đạn khi bắn chúng Boss
+
+
+
+//Player khi bị thua
+class Lose {
+public:
+    Lose();
+    void render(Vector2f, RenderWindow& window,float deltatime);
+    bool isActive();
+    void Reset();
+private:
+    Texture textures[63];
+    Sprite sprite;
+    int currenttexture;
+    float clock;
+};

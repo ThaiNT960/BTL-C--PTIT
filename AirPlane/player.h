@@ -21,6 +21,7 @@ public:
     void Damaged(float t);
     void Blink(float t);
     void Reset();
+    Vector2f getPosition();
 private:
     Texture texture0;
     Texture texture1;//ảnh phụ
