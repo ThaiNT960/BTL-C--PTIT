@@ -2,11 +2,12 @@
 #include <iostream>  
 
 Boss::Boss() {
-    if (!texture.loadFromFile("../Data/boss.png")) {
+    if (!texture.loadFromFile("../Data/U-GANDAM Blue Model.png")) {
         std::cerr << "Error loading boss texture!" << std::endl;
     }
     sprite.setTexture(texture);
-    sprite.setPosition(1500, 200);
+    sprite.setPosition(1500, 250);
+    sprite.setScale(1.1f,1.1f);
     speed = 200.f;
     Health = 400;
     shootCooldown = 2.0f;    // Sau 2s lại bắn tiếp
@@ -21,9 +22,9 @@ Boss::Boss() {
 
     // Thiết lập thanh HP
     healthBar.setFillColor(Color::Blue);
-    healthBar.setSize(Vector2f(Health * 0.7f, 10.f)); // Kích thước HP
+    healthBar.setSize(Vector2f(Health * 0.5f, 10.f)); // Kích thước HP
     healthBar1.setFillColor(Color(100, 100, 100, 150));
-    healthBar1.setSize(Vector2f(280.f, 10.f)); // Kích thước nền
+    healthBar1.setSize(Vector2f(200.f, 10.f)); // Kích thước nền
 }
 
 void Boss::update(float deltaTime) {
@@ -64,7 +65,7 @@ bool Boss::BossDefeat() {
 
 FloatRect Boss::getGlobalBounds() {
     if (Health <= 0) return FloatRect(0, 0, 0, 0);
-    return sprite.getGlobalBounds();
+    return FloatRect(sprite.getPosition().x+52,sprite.getPosition().y, sprite.getGlobalBounds().height, sprite.getGlobalBounds().width);
 }
 
 void Boss::decrease(int damage) {
@@ -113,10 +114,10 @@ void Boss::render(RenderWindow& window) {
 
 void Boss::updateHealthBar() {
     // Cập nhật kích thước thanh HP
-    healthBar.setSize(Vector2f(Health * 0.7f, 10.f));
+    healthBar.setSize(Vector2f(Health * 0.5f, 10.f));
     // Đặt vị trí thanh HP
-    healthBar.setPosition(sprite.getPosition().x, sprite.getPosition().y - 20.f);
-    healthBar1.setPosition(sprite.getPosition().x, sprite.getPosition().y - 20.f);
+    healthBar.setPosition(sprite.getPosition().x+35.f, sprite.getPosition().y - 20.f);
+    healthBar1.setPosition(sprite.getPosition().x+35.f, sprite.getPosition().y - 20.f);
 }
 
 void Boss::Reset() {

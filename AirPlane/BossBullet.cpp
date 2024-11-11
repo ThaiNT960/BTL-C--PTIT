@@ -3,8 +3,9 @@
 Texture BossBullet::texture;
 
 BossBullet::BossBullet(float x, float y) {
-    if (!texture.loadFromFile("../Data/Ebeam.png")) {}
+    if (!texture.loadFromFile("../Data/Pixel-Art-Spaceship-2D-Game-Sprites6.png")) {}
     sprite.setTexture(texture);
+    sprite.setScale(0.7f, 0.7f);
     sprite.setPosition(x, y);
     speed = 900.f;
     direction = { 1.f, 0.f };

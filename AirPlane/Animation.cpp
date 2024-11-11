@@ -76,7 +76,7 @@ void Heart::Reset() {
     }
     currentheart = 3;
 }
-// Hiệu ứng khi end game
+// Hiệu ứng khi thua
 Lose::Lose() {
     currenttexture = 0;
     clock = 0;
@@ -103,3 +103,4 @@ void Lose::Reset() {
     currenttexture = 0;
     clock = 0;
 }
+// Hiệu ứng khi thắng
