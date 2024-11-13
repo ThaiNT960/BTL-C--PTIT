@@ -19,6 +19,7 @@ public:
     bool isActive();
     void Reset();
     bool Attack(FloatRect);
+    Vector2f getPosition();
 private:
     Texture texture;
     Sprite sprite;

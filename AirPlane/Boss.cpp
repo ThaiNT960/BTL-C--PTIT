@@ -144,9 +144,9 @@ void Boss::Reset() {
 
     // Thiết lập thanh HP
     healthBar.setFillColor(Color::Blue);
-    healthBar.setSize(Vector2f(Health * 0.7f, 10.f)); // Kích thước HP
+    healthBar.setSize(Vector2f(Health * 0.5f, 10.f)); // Kích thước HP
     healthBar1.setFillColor(Color(100, 100, 100, 150));
-    healthBar1.setSize(Vector2f(280.f, 10.f)); // Kích thước nền
+    healthBar1.setSize(Vector2f(200.f, 10.f)); // Kích thước nền
 }
 bool Boss::Attack(FloatRect t) {
     bool hit = false;
@@ -159,4 +159,8 @@ bool Boss::Attack(FloatRect t) {
         if (!hit)++it;
     }
     return hit;
+}
+Vector2f Boss::getPosition()
+{
+    return sprite.getPosition();
 }

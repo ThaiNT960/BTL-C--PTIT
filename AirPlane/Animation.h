@@ -77,3 +77,16 @@ private:
     bool active;
 };
 
+class Win {
+public:
+    Win();
+    void render(Vector2f position, RenderWindow& window, float deltatime);
+    bool isActive();
+    void Reset();
+
+private:
+    Texture textures[63];
+    Sprite sprite;
+    int currenttexture;
+    float clock;
+};

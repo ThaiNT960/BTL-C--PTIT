@@ -59,7 +59,8 @@ int main() {
     //Tạo hiệu ứng khi thắng và thua
     Lose animationlose;
     Victory victoryEffect(Vector2f(600, 400));
-    
+    Win animationwin;
+
     sf::Texture gameOverTexture;
     sf::Sprite gameOverSprite;
     if (!gameOverTexture.loadFromFile("../Data/gameover.png")) {}
@@ -175,18 +176,23 @@ int main() {
 
             // Hiển thị khi Win hoặc Lose
             if (boss.BossDefeat()) {// Win
-                victoryEffect.activate();
-                window.draw(darkOverlay);
-                victoryEffect.render(window);
-                window.draw(Next);
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
-                    inMenu = true;
-                    victoryEffect.deactivate();
-                    player.Reset();
-                    boss.Reset();
-                    score.Reset();
-                    for (int i = 0; i < 3; i++)enemies[i].Reset();
-                    
+                if (animationwin.isActive()) {
+                    animationwin.render(boss.getPosition(), window, deltaTime);
+                }
+                else {
+                    victoryEffect.activate();
+                    window.draw(darkOverlay);
+                    victoryEffect.render(window);
+                    window.draw(Next);
+                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
+                        inMenu = true;
+                        victoryEffect.deactivate();
+                        player.Reset();
+                        boss.Reset();
+                        score.Reset();
+                        for (int i = 0; i < 3; i++)enemies[i].Reset();
+
+                    }
                 }
             }
             else if (!player.Activity()) { // Lose

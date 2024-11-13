@@ -164,3 +164,33 @@ void Victory::deactivate() {
 bool Victory::isActive() const {
     return active;
 }
+
+Win::Win() {
+    currenttexture = 0;
+    clock = 0;
+    for (int i = 0; i < 63; ++i) {
+        if (textures[i].loadFromFile("../Data/win/tile0" + to_string(i + 1) + ".png")) {}
+    }
+}
+
+void Win::render(Vector2f position, RenderWindow& window, float deltatime) {
+    sprite.setPosition(position.x - 340, position.y - 300);
+    sprite.setTexture(textures[currenttexture]);
+    sprite.setScale(3.5f, 3.5f);
+    window.draw(sprite);
+    clock += deltatime;
+    if (clock > 0.05f) {
+        clock = 0;
+        currenttexture++;
+    }
+}
+
+bool Win::isActive() {
+    if (currenttexture < 63) return true;
+    else return false;
+}
+
+void Win::Reset() {
+    currenttexture = 0;
+    clock = 0;
+}

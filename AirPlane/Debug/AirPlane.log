@@ -1,2 +1,10 @@
-﻿  main.cpp
-  AirPlane.vcxproj -> C:\GitHub\BTL-C--PTIT\Debug\AirPlane.exe
+﻿  Animation.cpp
+C:\Users\ADMIN88\Downloads\truongthai\BTL-C--PTIT\AirPlane\Animation.cpp(30,27): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\ADMIN88\Downloads\truongthai\BTL-C--PTIT\AirPlane\Animation.cpp(54,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Boss.cpp
+  main.cpp
+  player.cpp
+C:\Users\ADMIN88\Downloads\truongthai\BTL-C--PTIT\AirPlane\player.cpp(109,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ADMIN88\Downloads\truongthai\BTL-C--PTIT\AirPlane\player.cpp(116,23): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  AirPlane.vcxproj -> C:\Users\ADMIN88\Downloads\truongthai\BTL-C--PTIT\Debug\AirPlane.exe

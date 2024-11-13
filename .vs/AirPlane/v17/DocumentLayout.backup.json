@@ -1,73 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GitHub\\BTL-C--PTIT\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Boss.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Boss.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Boss.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Boss.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Boss.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Boss.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Boss.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Layer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitHub\\BTL-C--PTIT\\SFML\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\SFML\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SFML\\include\\SFML\\Graphics\\Glyph.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\BossBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\BossBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\BossBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BB771E30-F5B2-4E5C-9C19-6066BF7A73F2}|AirPlane\\AirPlane.vcxproj|solutionrelative:AirPlane\\Score.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -78,15 +78,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "player.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\player.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\player.cpp",
               "RelativeDocumentMoniker": "AirPlane\\player.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\player.cpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\player.cpp",
               "RelativeToolTip": "AirPlane\\player.cpp",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAAYAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -96,59 +100,60 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\main.cpp",
               "RelativeDocumentMoniker": "AirPlane\\main.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\main.cpp",
-              "RelativeToolTip": "AirPlane\\main.cpp",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAFAAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\main.cpp*",
+              "RelativeToolTip": "AirPlane\\main.cpp*",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAAMQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T07:37:36.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Boss.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Boss.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Boss.h",
               "RelativeDocumentMoniker": "AirPlane\\Boss.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Boss.h",
-              "RelativeToolTip": "AirPlane\\Boss.h",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCsAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Boss.h*",
+              "RelativeToolTip": "AirPlane\\Boss.h*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-23T09:25:32.28Z"
+              "WhenOpened": "2024-10-23T09:25:32.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Enemy.h",
+              "RelativeDocumentMoniker": "AirPlane\\Enemy.h",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Enemy.h",
+              "RelativeToolTip": "AirPlane\\Enemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-09T15:27:47.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Enemy.h",
-              "RelativeDocumentMoniker": "AirPlane\\Enemy.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Enemy.h",
-              "RelativeToolTip": "AirPlane\\Enemy.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-09T15:27:47.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainMenu.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\MainMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\MainMenu.cpp",
               "RelativeDocumentMoniker": "AirPlane\\MainMenu.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\MainMenu.cpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\MainMenu.cpp",
               "RelativeToolTip": "AirPlane\\MainMenu.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-26T09:43:00.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T09:43:00.067Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "MainMenu.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\MainMenu.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\MainMenu.h",
               "RelativeDocumentMoniker": "AirPlane\\MainMenu.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\MainMenu.h",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\MainMenu.h",
               "RelativeToolTip": "AirPlane\\MainMenu.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -156,26 +161,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Animation.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Animation.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Animation.h",
               "RelativeDocumentMoniker": "AirPlane\\Animation.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Animation.h",
-              "RelativeToolTip": "AirPlane\\Animation.h",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEEAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Animation.h*",
+              "RelativeToolTip": "AirPlane\\Animation.h*",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-26T03:42:45.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Animation.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Animation.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Animation.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Animation.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Animation.cpp",
-              "RelativeToolTip": "AirPlane\\Animation.cpp",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAqwHkAAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Animation.cpp*",
+              "RelativeToolTip": "AirPlane\\Animation.cpp*",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAAAMMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-10T13:50:56.474Z",
               "EditorCaption": ""
@@ -184,9 +189,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Glyph.hpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\SFML\\include\\SFML\\Graphics\\Glyph.hpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\SFML\\include\\SFML\\Graphics\\Glyph.hpp",
               "RelativeDocumentMoniker": "SFML\\include\\SFML\\Graphics\\Glyph.hpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\SFML\\include\\SFML\\Graphics\\Glyph.hpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\SFML\\include\\SFML\\Graphics\\Glyph.hpp",
               "RelativeToolTip": "SFML\\include\\SFML\\Graphics\\Glyph.hpp",
               "ViewState": "AgIAACMAAAAAAAAAAAAqwDAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -196,9 +201,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Bullet.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Bullet.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Bullet.h",
               "RelativeDocumentMoniker": "AirPlane\\Bullet.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Bullet.h",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Bullet.h",
               "RelativeToolTip": "AirPlane\\Bullet.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -206,23 +211,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Boss.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Boss.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Boss.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Boss.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Boss.cpp",
-              "RelativeToolTip": "AirPlane\\Boss.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Boss.cpp*",
+              "RelativeToolTip": "AirPlane\\Boss.cpp*",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-08T15:49:54.415Z"
+              "WhenOpened": "2024-11-08T15:49:54.415Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "player.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\player.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\player.h",
               "RelativeDocumentMoniker": "AirPlane\\player.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\player.h",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\player.h",
               "RelativeToolTip": "AirPlane\\player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -230,24 +236,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Enemy.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Enemy.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Enemy.cpp",
               "RelativeToolTip": "AirPlane\\Enemy.cpp",
               "ViewState": "AgIAACYAAAAAAAAAAAAAADAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-31T08:43:18.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:43:18.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Layer.h",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Layer.h",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Layer.h",
               "RelativeDocumentMoniker": "AirPlane\\Layer.h",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Layer.h",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Layer.h",
               "RelativeToolTip": "AirPlane\\Layer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -257,9 +262,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "BossBullet.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\BossBullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\BossBullet.cpp",
               "RelativeDocumentMoniker": "AirPlane\\BossBullet.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\BossBullet.cpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\BossBullet.cpp",
               "RelativeToolTip": "AirPlane\\BossBullet.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -269,9 +274,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "Bullet.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Bullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Bullet.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Bullet.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Bullet.cpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Bullet.cpp",
               "RelativeToolTip": "AirPlane\\Bullet.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -281,13 +286,23 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Score.cpp",
-              "DocumentMoniker": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Score.cpp",
+              "DocumentMoniker": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Score.cpp",
               "RelativeDocumentMoniker": "AirPlane\\Score.cpp",
-              "ToolTip": "C:\\GitHub\\BTL-C--PTIT\\AirPlane\\Score.cpp",
+              "ToolTip": "C:\\Users\\ADMIN88\\Downloads\\truongthai\\BTL-C--PTIT\\AirPlane\\Score.cpp",
               "RelativeToolTip": "AirPlane\\Score.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-26T18:02:02.857Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 579,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
