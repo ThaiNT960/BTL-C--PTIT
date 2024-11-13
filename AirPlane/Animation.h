@@ -89,4 +89,6 @@ private:
     Sprite sprite;
     int currenttexture;
     float clock;
+    SoundBuffer gameWinSoundBuffer;
+    Sound gameWinSound;
 };

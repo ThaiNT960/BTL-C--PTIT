@@ -171,10 +171,13 @@ Win::Win() {
     for (int i = 0; i < 63; ++i) {
         if (textures[i].loadFromFile("../Data/win/tile0" + to_string(i + 1) + ".png")) {}
     }
+    if (!gameWinSoundBuffer.loadFromFile("../Data/large-realistic-explosion-08-190269.wav")) {};
+    gameWinSound.setBuffer(gameWinSoundBuffer);
+    gameWinSound.setVolume(100.f);
 }
 
 void Win::render(Vector2f position, RenderWindow& window, float deltatime) {
-    sprite.setPosition(position.x - 340, position.y - 300);
+    sprite.setPosition(position.x - 390, position.y - 285);
     sprite.setTexture(textures[currenttexture]);
     sprite.setScale(3.5f, 3.5f);
     window.draw(sprite);
@@ -182,6 +185,9 @@ void Win::render(Vector2f position, RenderWindow& window, float deltatime) {
     if (clock > 0.05f) {
         clock = 0;
         currenttexture++;
+    }
+    if (currenttexture == 1 && gameWinSound.getStatus() != Sound::Playing) {
+        gameWinSound.play();  // Phát âm thanh game over khi bắt đầu hiệu ứng thắng
     }
 }
 

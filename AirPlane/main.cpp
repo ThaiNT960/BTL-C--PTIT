@@ -184,13 +184,14 @@ int main() {
                     window.draw(darkOverlay);
                     victoryEffect.render(window);
                     window.draw(Next);
-                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
+                    if (Keyboard::isKeyPressed(Keyboard::Enter)) {
                         inMenu = true;
                         victoryEffect.deactivate();
                         player.Reset();
                         boss.Reset();
                         score.Reset();
                         for (int i = 0; i < 3; i++)enemies[i].Reset();
+                        animationwin.Reset();
 
                     }
                 }
