@@ -24,6 +24,25 @@ int main() {
     RectangleShape darkOverlay(Vector2f(1500, 843));
     darkOverlay.setFillColor(Color(0, 0, 0, 150)); // Màu đen với độ mờ 150
 
+    Text aboutText1, aboutText2, aboutText3;
+    aboutText1.setFont(font);
+    aboutText1.setCharacterSize(50);
+    aboutText1.setFillColor(Color::White);
+    aboutText1.setString("Nguyen Truong Thai");
+    aboutText1.setPosition(350, 200);
+
+    aboutText2.setFont(font);
+    aboutText2.setCharacterSize(50);
+    aboutText2.setFillColor(Color::White);
+    aboutText2.setString("Duong Xuan Quynh");
+    aboutText2.setPosition(350, 350);
+
+    aboutText3.setFont(font);
+    aboutText3.setCharacterSize(50);
+    aboutText3.setFillColor(Color::White);
+    aboutText3.setString("Nguyen Tien Dung");
+    aboutText3.setPosition(350, 500);
+
     // Khởi tạo nền cuộn nhiều lớp
     ParallexBackground parallexBackground;
     parallexBackground.Init();
@@ -36,8 +55,30 @@ int main() {
     vector<Enemy> enemies(3); // Tạo 3 kẻ thù
     Clock clock;
     bool inMenu = true;
+    bool inAbout = false;
     //Tạo hiệu ứng khi thắng và thua
     Lose animationlose;
+    Victory victoryEffect(Vector2f(600, 400));
+    
+    sf::Texture gameOverTexture;
+    sf::Sprite gameOverSprite;
+    if (!gameOverTexture.loadFromFile("../Data/gameover.png")) {}
+    gameOverSprite.setTexture(gameOverTexture);
+    gameOverSprite.setPosition(400, 200);  // Vị trí của ảnh game over
+    gameOverSprite.setScale(1.5f, 1.5f);  // Phóng to theo tỷ lệ 1.5x
+
+    // Tính toán vị trí căn giữa ảnh sau khi phóng to
+    sf::FloatRect bounds = gameOverSprite.getLocalBounds();
+    float centerX = (window.getSize().x - bounds.width * 1.5f) / 2;
+    float centerY = (window.getSize().y - bounds.height * 1.5f) / 2-50;
+    gameOverSprite.setPosition(centerX, centerY);
+    // Tạo Text "CONTINUE?" dưới ảnh game over
+    sf::Text continueText;
+    continueText.setFont(font);
+    continueText.setCharacterSize(20);
+    continueText.setFillColor(sf::Color::Red);
+    continueText.setString("CONTINUE?");
+    continueText.setPosition(670, 580);
     //
     while (window.isOpen()) {
         float deltaTime = clock.restart().asSeconds();
@@ -67,6 +108,8 @@ int main() {
                             break;
                         case 2:
                             // Xử lý about ở đây
+                            inAbout = true;
+                            inMenu = false; // Thoát khỏi menu và vào phần About                           
                             break;
                         case 3: // Thoát
                             window.close();
@@ -75,10 +118,24 @@ int main() {
                     }
                 }
             }
+            if (inAbout && event.type == Event::KeyReleased) {
+                if (event.key.code == Keyboard::Enter) {
+                    inAbout = false;
+                    inMenu = true; // Quay lại menu khi nhấn Enter
+                }
+            }
         }
 
         // Nếu không còn ở trong menu, tiếp tục với trò chơi
-        if (!inMenu) {
+        if (inAbout) {
+            parallexBackground.Render(&window); // Vẽ nền trong About
+            window.draw(darkOverlay);
+            window.draw(aboutText1);
+            window.draw(aboutText2);
+            window.draw(aboutText3);
+            window.draw(Next); // Dòng chữ Click enter to continue
+        }
+        else if (!inMenu) {
             parallexBackground.Update(deltaTime); // Cập nhật nền cuộn nhiều lớp
 
             if (player.Activity() && !boss.BossDefeat()) {
@@ -118,16 +175,18 @@ int main() {
 
             // Hiển thị khi Win hoặc Lose
             if (boss.BossDefeat()) {// Win
-
+                victoryEffect.activate();
                 window.draw(darkOverlay);
+                victoryEffect.render(window);
                 window.draw(Next);
                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
                     inMenu = true;
+                    victoryEffect.deactivate();
                     player.Reset();
                     boss.Reset();
                     score.Reset();
                     for (int i = 0; i < 3; i++)enemies[i].Reset();
-
+                    
                 }
             }
             else if (!player.Activity()) { // Lose
@@ -136,6 +195,8 @@ int main() {
                 }
                 else {
                     window.draw(darkOverlay);
+                    window.draw(gameOverSprite);  // Vẽ ảnh game over
+                    window.draw(continueText);
                     window.draw(Next);
                     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
                         inMenu = true;

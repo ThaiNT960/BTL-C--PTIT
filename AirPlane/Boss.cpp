@@ -5,6 +5,10 @@ Boss::Boss() {
     if (!texture.loadFromFile("../Data/U-GANDAM Blue Model.png")) {
         std::cerr << "Error loading boss texture!" << std::endl;
     }
+    if (!victorySoundBuffer.loadFromFile("../Data/victory-voiced-165989.wav")) {
+        std::cerr << "Error loading victory sound!" << std::endl;
+    }
+    victorySound.setBuffer(victorySoundBuffer);
     sprite.setTexture(texture);
     sprite.setPosition(1500, 250);
     sprite.setScale(1.1f,1.1f);
@@ -13,12 +17,14 @@ Boss::Boss() {
     shootCooldown = 2.0f;    // Sau 2s lại bắn tiếp
     shootCooldownTimer = 0.f;
     active = false;
+    victorySoundPlayed = false;
 
     // Tải âm thanh cảnh báo
     if (!alarmSoundBuffer.loadFromFile("../Data/ambient_alarm1.wav")) {
         std::cerr << "Error loading alarm sound!" << std::endl;
     }
     alarmSound.setBuffer(alarmSoundBuffer);
+    alarmSound.setVolume(50.f);
 
     // Thiết lập thanh HP
     healthBar.setFillColor(Color::Blue);
@@ -60,7 +66,14 @@ void Boss::update(float deltaTime) {
 }
 
 bool Boss::BossDefeat() {
-    return Health <= 0;
+    if (Health <= 0) {
+        if (!victorySoundPlayed) {  
+            victorySound.play();
+            victorySoundPlayed = true;  
+        }
+        return true;
+    }
+    return false;
 }
 
 FloatRect Boss::getGlobalBounds() {
@@ -127,6 +140,7 @@ void Boss::Reset() {
     shootCooldown = 2.0f;    // Sau 2s lại bắn tiếp
     shootCooldownTimer = 0.f;
     active = false;
+    victorySoundPlayed = false;
 
     // Thiết lập thanh HP
     healthBar.setFillColor(Color::Blue);

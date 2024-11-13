@@ -38,4 +38,7 @@ private:
     Sound alarmSound;
     int alarmPlayCount;
     void updateHealthBar(); // Cập nhật thanh HP
+    SoundBuffer victorySoundBuffer;
+    Sound victorySound;
+    bool victorySoundPlayed;
 };

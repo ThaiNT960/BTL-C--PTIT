@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <vector>
 using namespace std;
 using namespace sf;
@@ -18,6 +19,7 @@ private:
     int currentSprite;
     bool active;
     float time;
+    
 };
 
 
@@ -33,6 +35,10 @@ private:
     int currentheart;
     vector<Texture> textures;
     vector<Sprite> sprites;
+    SoundBuffer explosionSoundBuffer;
+    Sound explosionSound;
+    sf::SoundBuffer gameOverSoundBuffer; 
+    sf::Sound gameOverSound;
  };
 //Tia đạn khi bắn chúng Boss
 
@@ -50,4 +56,24 @@ private:
     Sprite sprite;
     int currenttexture;
     float clock;
+    SoundBuffer gameOverSoundBuffer;
+    Sound gameOverSound;
 };
+
+// Hiệu ứng khi thắng
+class Victory {
+public:
+    Victory(Vector2f position);
+    void render(RenderWindow& window);
+    void activate();
+    void deactivate();
+    bool isActive() const;
+
+private:
+    Texture victoryTexture;
+    Sprite victorySprite;
+    Font victoryFont;
+    Text victoryText;
+    bool active;
+};
+

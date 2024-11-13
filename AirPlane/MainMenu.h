@@ -14,7 +14,11 @@ public:
     void MoveUp();
     void MoveDown();
     int MainMenuPressed();
+    void toggleSound();
     Music& getBackgroundMusic() { return backgroundMusic; }
+    void handleInput(Event event, RenderWindow& window);
+    void update(sf::RenderWindow& window);
+
 
 private:
     int MainMenuSelected;
@@ -27,4 +31,9 @@ private:
     SoundBuffer fightSoundBuffer; 
     Sound fightSound;
     Music backgroundMusic;
+    Texture soundOnTexture;
+    Texture soundOffTexture;
+    Sprite soundOnSprite;
+    Sprite soundOffSprite;
+    bool soundEnabled;
 };
