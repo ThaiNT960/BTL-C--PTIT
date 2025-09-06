@@ -97,4 +97,4 @@ Mở file **AirPlane.sln** bằng **Visual Studio 2022**, build và chạy để
 
   * 🔧 **Giải pháp tạm thời:** cần reset hoặc clear scale của Boss sau khi tiêu diệt.
   * 📌 **Kết quả:** game vẫn chạy được, nhưng đôi khi gây lỗi va chạm trong màn tiếp theo.<br>
-   **Lười fix =))**
+   **Lười fix =)) , lúc run bị lỗi nhớ chọn x86 ,do cài sfmlx32**
