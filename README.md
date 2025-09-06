@@ -1,4 +1,4 @@
-# 🎮 Bài Tập Lớn C++ PTIT – Game AirPlane Bắn Máy Bay
+# 🎮 Bài Tập Lớn C++ PTIT – Game AirPlane
 
 📚 **Môn học:** Ngôn ngữ lập trình C++ – PTIT
 
