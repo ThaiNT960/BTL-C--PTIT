@@ -3,10 +3,10 @@
 
 Boss::Boss() {
     if (!texture.loadFromFile("../Data/U-GANDAM Blue Model.png")) {
-        std::cerr << "Error loading boss texture!" << std::endl;
+        cerr << "Error loading boss texture!" << endl;
     }
     if (!victorySoundBuffer.loadFromFile("../Data/victory-voiced-165989.wav")) {
-        std::cerr << "Error loading victory sound!" << std::endl;
+        cerr << "Error loading victory sound!" << endl;
     }
     victorySound.setBuffer(victorySoundBuffer);
     sprite.setTexture(texture);
@@ -21,7 +21,7 @@ Boss::Boss() {
 
     // Tải âm thanh cảnh báo
     if (!alarmSoundBuffer.loadFromFile("../Data/ambient_alarm1.wav")) {
-        std::cerr << "Error loading alarm sound!" << std::endl;
+        cerr << "Error loading alarm sound!" << endl;
     }
     alarmSound.setBuffer(alarmSoundBuffer);
     alarmSound.setVolume(50.f);

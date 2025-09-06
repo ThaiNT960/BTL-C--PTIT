@@ -1,4 +1,5 @@
 ﻿#include "Animation.h"
+using namespace sf;
 //Hiệu ứng nổ khi địch bị hạ
 Explosion::Explosion(Vector2f position) {
     currentSprite = 0;
@@ -6,7 +7,7 @@ Explosion::Explosion(Vector2f position) {
     time = 0;
     // Tải 6 hình ảnh nổ
     for (int i = 0; i < 6; ++i) {
-        sf::Texture texture;
+        Texture texture;
         if (texture.loadFromFile("../Data/Explosion" + to_string(i) + ".png")) {
             textures.push_back(texture);
         }

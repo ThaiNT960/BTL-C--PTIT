@@ -17,7 +17,7 @@ public:
     void toggleSound();
     Music& getBackgroundMusic() { return backgroundMusic; }
     void handleInput(Event event, RenderWindow& window);
-    void update(sf::RenderWindow& window);
+    void update(RenderWindow& window);
 
 
 private:

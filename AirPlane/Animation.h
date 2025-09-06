@@ -37,8 +37,8 @@ private:
     vector<Sprite> sprites;
     SoundBuffer explosionSoundBuffer;
     Sound explosionSound;
-    sf::SoundBuffer gameOverSoundBuffer; 
-    sf::Sound gameOverSound;
+    SoundBuffer gameOverSoundBuffer; 
+    Sound gameOverSound;
  };
 //Tia đạn khi bắn chúng Boss
 
