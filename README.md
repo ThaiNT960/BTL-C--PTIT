@@ -93,8 +93,8 @@ Mở file **AirPlane.sln** bằng **Visual Studio 2022**, build và chạy để
 
 ## ⚠️ 1 số lỗi mắc phải
 
-* Khi tiêu diệt **Boss**, quên xoá phần *scale* đúng cách → dẫn tới vòng đạn tiếp theo trúng vùng đó sẽ **mất hitbox**.
+* Khi tiêu diệt **Boss**, quên xoá phần *scale* đúng cách → dẫn tới vòng đạn tiếp theo trúng vùng đó sẽ **mất hitbox** , đôi khi dính lỗi bất tử
 
   * 🔧 **Giải pháp tạm thời:** cần reset hoặc clear scale của Boss sau khi tiêu diệt.
   * 📌 **Kết quả:** game vẫn chạy được, nhưng đôi khi gây lỗi va chạm trong màn tiếp theo.<br>
-   **Lười fix =)) , lúc run bị lỗi nhớ chọn x86 ,do cài sfmlx32**
+   **Lười fix =)) ,đã đổi tên airplane thành sky warriors, lúc run bị lỗi nhớ chọn x86 ,do cài sfmlx32**
