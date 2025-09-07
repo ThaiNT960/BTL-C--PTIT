@@ -98,3 +98,5 @@ Mở file **AirPlane.sln** bằng **Visual Studio 2022**, build và chạy để
   * 🔧 **Giải pháp tạm thời:** cần reset hoặc clear scale của Boss sau khi tiêu diệt.
   * 📌 **Kết quả:** game vẫn chạy được, nhưng đôi khi gây lỗi va chạm trong màn tiếp theo.<br>
    **Lười fix =)) ,đã đổi tên airplane thành sky warriors, lúc run bị lỗi nhớ chọn x86 ,do cài sfmlx32**
+
+![Visitors](https://komarev.com/ghpvc/?username=ThaiNT960&repo=BTL-Cpp-PTIT&color=blue&style=flat-square)
